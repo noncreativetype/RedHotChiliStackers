@@ -1,0 +1,62 @@
+@import "compass" ;
+@import "compass/reset";
+
+// body{
+//     display:flex;
+//     // flex: auto;
+//     height:100%;
+//     flex-direction:row;
+    
+// }
+
+.header{
+    flex:auto;
+    flex-flow: column;
+    justify-content: center;
+    width:100%;
+    text-align: center;
+}
+.main{
+    display: flex;
+    flex:auto;
+    flex-basis: auto;
+    height: 100%;
+    width: 100%;
+    // padding: 5%,5%,5%,5%;
+    margin: .5%;
+    background-color:yellow;
+    box-shadow: inset 0 0 10px #000000;
+    
+}
+
+.team{
+    flex-basis: auto;
+    height: 25%;
+    width: 90%;
+    padding: 5%,5%,5%,5%;
+    margin: .5%;
+    background-color:yellow;
+    box-shadow: inset 0 0 10px #000000;
+}
+
+.mission{
+    flex-basis: auto;
+    height: 25%;
+    width: 90%;
+    padding: 5%,5%,5%,5%;
+    margin: .5%;
+    background-color:blue;
+    box-shadow: inset 0 0 10px #000000;
+    
+}
+
+.upcoming{
+    flex-basis: auto;
+    height: 25%;
+    width: 90%;
+    padding: 5%,5%,5%,5%;
+    margin: .5%;
+    background-color:yellow;
+    box-shadow: inset 0 0 10px #000000;
+    
+}
