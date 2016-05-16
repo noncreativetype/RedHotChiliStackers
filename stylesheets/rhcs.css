@@ -1,4 +1,4 @@
-/* line 5, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,99 +20,127 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
-/* line 12, ../sass/rhcs.scss */
-.header {
-  flex: auto;
-  flex-flow: column;
-  justify-content: center;
-  width: 100%;
-  text-align: center;
+/* line 11, ../sass/rhcs.scss */
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
-/* line 19, ../sass/rhcs.scss */
+/* line 16, ../sass/rhcs.scss */
 .main {
   display: flex;
-  flex: auto;
-  flex-basis: auto;
+  flex-direction: column;
+  flex-wrap: nowrap;
   height: 100%;
+  overflow: auto;
+}
+
+/* line 26, ../sass/rhcs.scss */
+.header {
+  flex: none;
+  font-size: 3em;
+  justify-content: center;
+  font-weight: 3em;
+  text-align: center;
+  background-color: orange;
+}
+
+/* line 37, ../sass/rhcs.scss */
+.content {
+  flex: 1;
+  display: flex;
   width: 100%;
-  margin: .5%;
-  background-color: yellow;
-  box-shadow: inset 0 0 10px #000000;
+  flex-direction: column;
 }
 
-/* line 32, ../sass/rhcs.scss */
+/* line 46, ../sass/rhcs.scss */
 .team {
-  flex-basis: auto;
-  height: 25%;
-  width: 90%;
-  padding: 5%,5%,5%,5%;
-  margin: .5%;
-  background-color: yellow;
+  flex: 1 1 auto;
+  background-color: red;
   box-shadow: inset 0 0 10px #000000;
+  flex-direction: row;
 }
 
-/* line 42, ../sass/rhcs.scss */
+/* line 53, ../sass/rhcs.scss */
+.ag {
+  flex: auto;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  background-color: green;
+}
+
+/* line 61, ../sass/rhcs.scss */
+.fh {
+  flex: auto;
+  display: flex;
+  width: 33%;
+  flex-direction: column;
+  background-color: brown;
+}
+
+/* line 69, ../sass/rhcs.scss */
+.fp {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: purple;
+}
+
+/* line 76, ../sass/rhcs.scss */
 .mission {
-  flex-basis: auto;
-  height: 25%;
-  width: 90%;
-  padding: 5%,5%,5%,5%;
-  margin: .5%;
+  flex: 1 1 auto;
   background-color: blue;
   box-shadow: inset 0 0 10px #000000;
 }
 
-/* line 53, ../sass/rhcs.scss */
+/* line 83, ../sass/rhcs.scss */
 .upcoming {
-  flex-basis: auto;
-  height: 25%;
-  width: 90%;
-  padding: 5%,5%,5%,5%;
-  margin: .5%;
+  flex: 1 1 auto;
   background-color: yellow;
   box-shadow: inset 0 0 10px #000000;
 }
